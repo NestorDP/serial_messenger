@@ -8,6 +8,7 @@ SerialMessenger::SerialMessenger(QWidget *parent)
     Messenger *tab_messenger = new Messenger;
     SendFile *tab_send_file = new SendFile;
     tabWidget->removeTab(0);
-    tabWidget->addTab(tab_messenger, "Tab 1");
-    tabWidget->addTab(tab_send_file, "Tab 2");
+    tabWidget->addTab(tab_messenger, "Messenger");
+    tabWidget->addTab(tab_send_file, "Send/Receive file");
+    
 }

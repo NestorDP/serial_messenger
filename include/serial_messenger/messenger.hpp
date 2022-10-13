@@ -11,8 +11,11 @@ public:
     explicit Messenger(QWidget *parent = nullptr);
 
 private slots:
-    void on_pushButton_clicked();
-    
+    void on_pushButton_clicked(); 
+    void on_lineEdit_editingFinished();
+
+private:
+    QStringList text_list;
 };
 
 
