@@ -1,23 +1,27 @@
-#ifndef SERIAL_MESSENGER_H
-#define SERIAL_MESSENGER_H
+#ifndef MAIN_WINDOW_H
+#define MAIN_WINDOW_H
+// 
+#include <QMainWindow>
 
-#include <QWidget>
 #include "ui_serial_messenger.h"
+#include "ui_messenger.h"
 
-class CalculatorForm : public QWidget
+#include "serial_messenger/messenger.hpp"
+#include "serial_messenger/send_file.hpp"
+
+class SerialMessenger : public QMainWindow, private Ui::MainWindow
 {
     Q_OBJECT
 
 public:
-    explicit CalculatorForm(QWidget *parent = nullptr);
+    explicit SerialMessenger(QWidget *parent = nullptr);
 
-private slots:
-    void on_inputSpinBox1_valueChanged(int value);
-    void on_inputSpinBox2_valueChanged(int value);
 
-private:
-    Ui::CalculatorForm ui;
+// private slots:
+//     void on_pushButton_clicked();
+//     void on_pushButton_3_clicked();
+
+
 };
-//! [1]
 
-#endif  // SERIAL_MESSENGER_H
+#endif  // MAIN_WINDOW_H
