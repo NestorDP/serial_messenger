@@ -6,14 +6,6 @@ Messenger::Messenger(QWidget *parent)
     text_list << "monitor" << "mouse" << "keyboard" << "hard disk drive"
             << "graphic card" << "sound card" << "memory" << "motherboard";
     lineEdit->setPlaceholderText("Write a message here to send");
-    pushButton->setText("Send");
-}
-
-
-void Messenger::on_pushButton_clicked() {
-    listWidget->addItem(lineEdit->text());
-    lineEdit->selectAll();
-    lineEdit->del();
 }
 
 

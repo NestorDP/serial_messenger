@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>573</width>
-    <height>313</height>
+    <width>570</width>
+    <height>301</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -24,7 +24,7 @@
     <property name="geometry">
      <rect>
       <x>0</x>
-      <y>10</y>
+      <y>0</y>
       <width>571</width>
       <height>281</height>
      </rect>
@@ -41,7 +41,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>573</width>
+     <width>570</width>
      <height>22</height>
     </rect>
    </property>
@@ -66,6 +66,17 @@
    <addaction name="menuFile"/>
    <addaction name="menuEdit"/>
    <addaction name="menuConfiguration"/>
+  </widget>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>RightToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
   </widget>
   <action name="actionSave">
    <property name="text">

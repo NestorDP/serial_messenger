@@ -6,57 +6,30 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>570</width>
+    <width>563</width>
     <height>253</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Form</string>
   </property>
-  <widget class="QPushButton" name="pushButton">
-   <property name="geometry">
-    <rect>
-     <x>10</x>
-     <y>180</y>
-     <width>121</width>
-     <height>61</height>
-    </rect>
-   </property>
-   <property name="minimumSize">
-    <size>
-     <width>0</width>
-     <height>0</height>
-    </size>
-   </property>
-   <property name="baseSize">
-    <size>
-     <width>0</width>
-     <height>0</height>
-    </size>
-   </property>
-   <property name="text">
-    <string>PushButton</string>
-   </property>
-  </widget>
-  <widget class="QLineEdit" name="lineEdit">
-   <property name="geometry">
-    <rect>
-     <x>140</x>
-     <y>180</y>
-     <width>421</width>
-     <height>61</height>
-    </rect>
-   </property>
-  </widget>
-  <widget class="QListWidget" name="listWidget">
+  <widget class="QWidget" name="verticalLayoutWidget">
    <property name="geometry">
     <rect>
      <x>10</x>
      <y>10</y>
-     <width>551</width>
-     <height>161</height>
+     <width>531</width>
+     <height>231</height>
     </rect>
    </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QListWidget" name="listWidget"/>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="lineEdit"/>
+    </item>
+   </layout>
   </widget>
  </widget>
  <resources/>
