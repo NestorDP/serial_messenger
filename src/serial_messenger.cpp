@@ -22,5 +22,10 @@ SerialMessenger::SerialMessenger(QWidget *parent)
     toolBar->addAction(QIcon(new_icon), "New Chat");
     toolBar->addAction(QIcon(open_icon), "Open Chat");
     toolBar->addSeparator();
-    toolBar->addAction(QIcon(off_icon), "Connect");
+    action_connect_ = toolBar->addAction(QIcon(off_icon), "Connect");
+    connect(action_connect_, &QAction::triggered, qApp, &QApplication::quit);
 }
+
+// void SerialMessenger::on_action_connect_actionTriggered() {
+//     QApplication::quit();
+// }

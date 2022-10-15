@@ -17,10 +17,12 @@ public:
     explicit SerialMessenger(QWidget *parent = nullptr);
 
 
-// private slots:
-//     void on_pushButton_clicked();
+private slots:
+    void on_action_connect_actionTriggered();
 //     void on_pushButton_3_clicked();
 
+private:
+    QAction *action_connect_ = new QAction();
 
 };
 
